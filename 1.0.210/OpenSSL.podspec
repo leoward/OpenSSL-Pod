@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
     mkdir -p "${CURRENTPATH}"
     mkdir -p "${CURRENTPATH}/bin"
 
-    cp "file.tgz" "${CURRENTPATH}/file.tgz"
+    cp -rf "${BASEPATH}/" "${CURRENTPATH}/openssl-${VERSION}" cd "${CURRENTPATH}" cd "openssl-${VERSION}"
     cd "${CURRENTPATH}"
     tar -xzf file.tgz
     cd "openssl-${VERSION}"
